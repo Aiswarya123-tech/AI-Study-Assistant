@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📚 AI Study Assistant</h1>
+    <p class="subtitle">Your Personal AI Learning Companion</p>
+
+    <!-- MAIN INPUT (ONLY ONE MESSAGE BOX) -->
+    <textarea id="message" placeholder="Ask a question, generate notes, quiz..."></textarea>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+        <button onclick="sendMessage()">Chat</button>
+        <button onclick="generateNotes()">Notes</button>
+        <button onclick="generateQuiz()">Quiz</button>
+        <button onclick="generateSummary()">Summary</button>
+    </div>
+
+    <!-- CHAT BOX (SEPARATE INPUT - FIXED ID) -->
+    <div id="chat-box" style="display:none; margin-top:10px;">
+        <input type="text" id="chat-message" placeholder="Ask anything...">
+        <button onclick="sendChatMessage()">Send</button>
+    </div>
+
+    <!-- OUTPUT BOXES -->
+    <div id="response-box"></div>
+    <div id="quiz-box"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
